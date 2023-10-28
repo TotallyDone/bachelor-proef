@@ -27,4 +27,4 @@ df = pd.DataFrame({
 })
 
 custom_header = ['country', 'Electricity Price']
-df.to_csv('output.csv', index=True, na_rep='N/A')
+df.to_csv('output.csv', index=False, na_rep='N/A')
