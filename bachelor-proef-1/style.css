@@ -1,0 +1,502 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    background-size: cover; /* Adjust as needed */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 8% 0 8%; /* Simplify padding */
+}
+
+.logo {
+    color: black;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: 'Waterfall', cursive;
+
+
+}
+.logo1{
+    color: rgb(16, 60, 183);
+    font-family: 'Waterfall', cursive;
+}
+
+span {
+    color: rgb(16, 60, 183);
+    
+   
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+ 
+}
+
+nav ul li a:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+.content {
+    padding-top: 0%;
+    transform: translateY(-50%);
+}
+
+h1 {
+    color: rgb(163, 20, 20);
+    margin: 20px 0;
+    font-size: 75px;
+}
+
+h3 {
+    color: black;
+    font-size: 50px;
+ 
+    text-align: center;
+    font-family: 'Comforter Brush', cursive;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+h4 {
+    color: black;
+    letter-spacing: 2px;
+    font-size: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.logo-image {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.logo-image img {
+    width: 450px; /* Adjust the size as needed */
+}
+
+.logo-image1 img {
+    width: 150px; /* Adjust the size as needed */
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+.location{
+    height: 100vh;
+    width: 100%;
+    padding:0;
+    
+   
+    
+
+}
+.location-text {
+  width: 100%;
+  max-width: 550px;
+  margin: auto;
+  padding: 0 20px; /* Add some padding to prevent the text from touching the edges */
+  padding-top: 100px;
+
+ 
+}
+
+.location-text h2{
+    color: black;
+    font-size: 55px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.location-text h5{
+    color: black;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.about-text p {
+  color: black;
+  font-size: 18px;
+  text-align: right;
+  text-align: justify; /* Add justification to the text */
+  line-height: 1.6; /* Adjust line height for better readability */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#cityInput,
+#countryInput {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#searchBtn {
+    background-color: #0074cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#searchBtn:hover {
+    background-color: #0056a3;
+}
+
+.world-map {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: auto;
+    padding: 20px;
+}
+
+/* Style the country labels */
+.country-label {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Style the "mostly sunny" labels */
+.mostly-sunny-label {
+    background-color: #ffcc00; /* Adjust the background color as needed */
+    color: #333;
+    font-weight: bold;
+}
+
+/* Style the world map image */
+.world-map img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.calculator {
+    width: 100%;
+    padding: 0;
+    padding-top: 400px;
+    
+}
+
+.calculator-text {
+   
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+    padding: 0 20px; /* Add some padding to prevent the text from touching the edges */
+    
+    
+   
+}
+
+.calculator-text h2 {
+    color: black;
+    font-size: 55px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.calculator-text h5 {
+    color: black;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.calculator-form {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#energyUsage {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+#sunlightHours {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    width: 150px;
+}
+
+#energyUsage::placeholder,
+#sunlightHours::placeholder {
+    font-size: 10px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    /* You can add more styles as needed */
+}
+
+#calculateBtn {
+    background-color: #0074cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#calculateBtn:hover {
+    background-color: #0056a3;
+}
+
+.calculator-form select {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    width: 140px;
+}
+
+/* Styling the dropdown arrow */
+.calculator-form select::-ms-expand,
+.calculator-form select::-ms-value {
+    display: none;
+}
+
+/* Styling the dropdown options */
+.calculator-form select option {
+    padding: 5px;
+}
+
+
+#countrySelect {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold; /* Set the font weight */
+    /* Additional styles can be added as needed */
+}
+
+#countrySelect option {
+    font-weight: bold; /* Reset the font weight for the options if needed */
+    /* Additional styles for the options */
+    text-align: center;
+}
+
+#resultArea.result-text {
+    font-family: 'Merienda', cursive;
+    font-size: 16px; 
+    color: #000000;
+    text-align: center; /* Aligns text along both edges */
+    padding-bottom: 80px;/* Adds padding to the left and right edges */
+}
+
+
+
+
+#resultArea1.result-text1 {
+    font-family: 'Merienda', cursive;
+    font-size: 16px; 
+    color: #000000;
+    text-align: center; /* Aligns text along both edges */
+    padding-bottom: 80px;/* Adds padding to the left and right edges */
+}
+#cityInput::placeholder,
+#countryInput::placeholder {
+    font-size: 10px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    /* You can add more styles as needed */
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero {
+        background-size: contain;
+   
+        ;
+        
+    }
+    .logo{
+        font-size: 80px;
+    }
+    .hero nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    .hero nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+    
+      .hero nav ul li {
+        margin-bottom: 10px;
+      }
+    .content {
+        padding-top: 1%;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 30px;
+     
+    }
+    h4 {
+        font-size: 16px;
+    }
+    .logo-image {
+        top: 40%;
+    }
+    .logo-image img {
+        width: 300px;
+    }
+
+    
+@keyframes fadeIn {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+    /* Common styles for both sections */
+
+.location-text,
+.calculator-text {
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+    padding: 0 20px;
+    text-align: center; /* Center align text on small screens */
+}
+
+.location-text h2,
+.calculator-text h2 {
+    font-size: 28px; /* Reduce font size for h2 on small screens */
+    margin-bottom: 15px;
+    
+}
+
+.location-text h5,
+.calculator-text h5 {
+    font-size: 18px; /* Reduce font size for h5 on small screens */
+    margin-bottom: 20px;
+}
+
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Responsive styles for the location section */
+.location {
+    height: auto; /* Remove fixed height on small screens */
+    padding: 20px; /* Add padding to the location section for spacing */
+ 
+
+}
+
+#cityInput,
+#countryInput {
+    width: 70%; /* Make input fields full width on small screens */
+    margin: 10px 0; /* Add vertical margin to input fields */
+}
+
+#searchBtn {
+    width: 50%; /* Make the button full width on small screens */
+}
+
+.world-map {
+    max-width: 80%; /* Make the map image responsive */
+    padding: 10px;
+}
+
+/* Responsive styles for the calculator section */
+.calculator {
+    padding-top: 200px; /* Reduce padding on small screens for spacing */
+}
+
+#energyUsage,
+#sunlightHours {
+    width: 70%; /* Make input fields full width on small screens */
+    margin: 10px 0; /* Add vertical margin to input fields */
+}
+
+#calculateBtn {
+    width: 40%; /* Make the button full width on small screens */
+}
+
+.calculator-text #resultArea {
+    font-size: 14px; /* Reduce font size for result area on small screens */
+}
+
+}
